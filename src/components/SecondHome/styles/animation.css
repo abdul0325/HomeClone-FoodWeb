@@ -1,0 +1,86 @@
+  /* text animaiton */
+@keyframes tiltScaleMotion {
+  0% {
+    transform: perspective(800px) rotateX(0deg);
+  }
+  20% {
+    transform: perspective(800px) rotateX(-25deg);
+  }
+  40% {
+    transform: perspective(800px) rotateX(25deg);
+  }
+  60% {
+    transform: perspective(800px) rotateX(-20deg);
+  }
+  80% {
+    transform: perspective(800px) rotateX(15deg);
+  }
+  100% {
+    transform: perspective(800px) rotateX(0deg);
+  }
+}
+
+.animate-tilt-scale {
+  animation: tiltScaleMotion 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+/* image animations */
+
+@keyframes flyInDiagonal {
+  0% {
+    transform: translate(-100px, 100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+.animate-diagonal-in {
+  animation: flyInDiagonal 1.2s ease-out forwards;
+  will-change: transform, opacity;
+}
+
+.bg-mega-deal {
+  background-image: url('https://www.radiustheme.com/demo/wordpress/themes/foodymat/wp-content/uploads/2024/11/h2-banner-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bg-main-block {
+  background-image: url('https://www.radiustheme.com/demo/wordpress/themes/foodymat/wp-content/uploads/2024/12/why-choose1-min.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bg-track {
+  background-image: url('https://www.radiustheme.com/demo/wordpress/themes/foodymat/wp-content/uploads/2024/10/How-to-order_.png');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bg-clientAbout {
+  background-image: url('https://www.radiustheme.com/demo/wordpress/themes/foodymat/wp-content/uploads/2025/01/h4-clients-1.png');
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bg-apple {
+  background-image: url('https://www.radiustheme.com/demo/wordpress/themes/foodymat/wp-content/uploads/2024/12/app-store.png');
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-googlePlay {
+  background-image: url('https://www.radiustheme.com/demo/wordpress/themes/foodymat/wp-content/uploads/2024/12/play-store.png');
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
